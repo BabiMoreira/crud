@@ -4,7 +4,6 @@ from .models import Aluno, Usuario
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
-
     
 def index(request):
     if request.method == 'POST':
@@ -34,3 +33,6 @@ def deletar(request):
         item.save()
         return redirect('/aluno/listar')
     return render(request, 'lista.html')
+
+def login(request):
+    return render(request, 'login.html')
