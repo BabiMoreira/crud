@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
-</head>
-<body>
-    <nav>
-        <a href="">Home</a>
-        <a href="">Cadastro</a>
-        <a href="">Lista</a>
-        <a href="">Login</a>
-    </nav>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<nav class="navbar">
+    <a href="">Home</a>
+    <a href="">Cadastro</a>
+    <a href="">Lista</a>
+    <a href="">Login</a>
+</nav>
+
+<section class="banner">
+    <img src="" alt="">
+</section>
+
+<section class="box-text">
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum exercitationem neque dolores quibusdam dicta?
+        Facere ipsa odio saepe. Aliquid repellendus commodi eveniet dolorem laudantium ipsa voluptates blanditiis,
+        quidem asperiores autem quam tempora dolores, sequi facilis corrupti enim repudiandae vero! Iste!
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est labore, expedita quis fugit ea modi nam qui,
+        necessitatibus magni optio odio. Atque, quisquam facilis. Architecto inventore doloremque voluptas harum
+        voluptatibus itaque, corporis nobis maxime accusamus laborum tenetur, cum delectus. Rem quia nemo autem nisi
+        totam? Molestias eaque molestiae hic tempore.
+    </div>
+</section>
+{% endblock %}

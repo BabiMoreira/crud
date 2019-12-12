@@ -1,5 +1,5 @@
 body{
-    margin-left: 20px;
+    margin: 0;
 }
 
 .titulo-index{
@@ -50,4 +50,21 @@ input{
 .imagem{
     width: 22%;
     margin: 20px 20px 20px 0px;
+}
+
+.navbar{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #252425;
+}
+
+.navbar a{
+    color: #FFAD0E ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+ 
 }
