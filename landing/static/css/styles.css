@@ -67,6 +67,9 @@ input{
     text-transform: uppercase;
     font-size: 13px;
 }
+.banner img{
+    width: 100%;
+}
 
 .box-text{
     display: flex;
