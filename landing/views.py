@@ -13,10 +13,9 @@ def index(request):
         data_usuario.save()
         
         data_aluno = Aluno()
-        data_aluno.nome = request.POST['nome']
         data_aluno.frase = request.POST['frase']
         data_aluno.save()
-        
+        # return redirect(request, 'login.html')
     return render(request, 'index.html')
 
 def listar(request):
@@ -35,4 +34,9 @@ def deletar(request):
     return render(request, 'lista.html')
 
 def login(request):
+    if request.method == 'POST':
+        data_aluno = Usuario()
+        data_aluno.email = request.POST['email']
+        data_aluno.senha = request.POST['senha']
+        data_aluno.save()
     return render(request, 'login.html')

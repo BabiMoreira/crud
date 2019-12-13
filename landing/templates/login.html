@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block content %}
-<form action="/alunos/login">
+<form action="alunos/login" method="POST">
     {% csrf_token %}
     <label for="email"> Email: </label>
     <input name='email' type="email" required>
 
-    <label for="senha"> Senha:</label>
+    <label for="senha">Senha:</label>
     <input name='senha' type="password">
 
     <input type="submit" value='Enviar'>
